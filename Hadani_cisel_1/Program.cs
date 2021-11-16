@@ -6,13 +6,15 @@ namespace Hadani_cisel_1
     {
         static void Main(string[] args)
         {
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             
-            Random random = new Random();
-            int nahodne_cislo = random.Next(1, 100);
-            double tip;
-            bool spatny_tip = true;
             while (true)
             {
+                Random random = new Random();
+                int nahodne_cislo = random.Next(1, 100);
+                bool spatny_tip = true;
+                double tip;
                 Console.Clear();
                 Console.WriteLine("Hádání čísla");
                 Console.WriteLine("----------------");
